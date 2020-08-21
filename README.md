@@ -7,7 +7,7 @@
 
 <p>
   <a href="#description">Description</a> •
-  <a href="#languages & technologies used:">Languages & Technologies</a> •
+  <a href="#languages_&_technologies used:">Languages & Technologies</a> •
 </p>
 
 
