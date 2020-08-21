@@ -5,6 +5,11 @@
 
 <img align="center" src="./assets/img/header-image.jpg">
 
+<p>
+  <a href="#description">Description</a> •
+  <a href="#languages & technologies used:">Languages & Technologies</a> •
+</p>
+
 
 ## Description
 
