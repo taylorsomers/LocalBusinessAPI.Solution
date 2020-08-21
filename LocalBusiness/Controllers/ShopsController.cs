@@ -10,54 +10,54 @@ namespace LocalBusiness.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class RestaurantsController : ControllerBase
+  public class ShopsController : ControllerBase
   {
     private LocalBusinessContext _db;
 
-    public RestaurantsController(LocalBusinessContext db)
+    public ShopsController(LocalBusinessContext db)
     {
       _db = db;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Restaurant>> GetAll(string restaurantName, string restaurantAddress, string restaurantType, string restaurantYelpRating)
+    public ActionResult<IEnumerable<Shop>> GetAll(string shopName, string shopAddress, string shopType, string shopYelpRating)
     {
-      var query = _db.Restaurants.AsQueryable();
+      var query = _db.Shops.AsQueryable();
 
-      if (restaurantName != null)
+      if (shopName != null)
       {
-        query = query.Where(entry => entry.RestaurantName == restaurantName);
+        query = query.Where(entry => entry.ShopName == shopName);
       }
 
-      if (restaurantAddress != null)
+      if (shopAddress != null)
       {
-        query = query.Where(entry => entry.RestaurantAddress == restaurantAddress);
+        query = query.Where(entry => entry.ShopAddress == shopAddress);
       }
 
-      if (restaurantType != null)
+      if (shopType != null)
       {
-        query = query.Where(entry => entry.RestaurantType == restaurantType);
+        query = query.Where(entry => entry.ShopType == shopType);
       }
 
-      if (restaurantYelpRating != null)
+      if (shopYelpRating != null)
       {
-        query = query.Where(entry => entry.RestaurantYelpRating == restaurantYelpRating);
+        query = query.Where(entry => entry.ShopYelpRating == shopYelpRating);
       }
 
       return query.ToList();
     }
 
     [HttpPost]
-    public void Post([FromBody] Restaurant restaurant)
+    public void Post([FromBody] Shop shop)
     {
-      _db.Restaurants.Add(restaurant);
+      _db.Shops.Add(shop);
       _db.SaveChanges();
     }
 
     [HttpGet ("{id}")]
-    public ActionResult<Restaurant> Get(int id)
+    public ActionResult<Shop> Get(int id)
     {
-      return _db.Restaurants.FirstOrDefault(entry => entry.RestaurantId == id);
+      return _db.Shops.FirstOrDefault(entry => entry.ShopId == id);
     }
 
     [HttpGet("page")]
@@ -65,8 +65,8 @@ namespace LocalBusiness.Controllers
     {
       var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
 
-      var pagedData = _db.Restaurants
-        .OrderBy(restaurant => restaurant.RestaurantId)
+      var pagedData = _db.Shops
+        .OrderBy(shop => shop.ShopId)
         .Skip((validUrlQuery.PageNumber - 1) * validUrlQuery.PageSize)
         .Take(validUrlQuery.PageSize);
       
@@ -74,11 +74,11 @@ namespace LocalBusiness.Controllers
     }
 
     [HttpPut("{id}")]
-    public void Put(int id, [FromBody] Restaurant restaurant)
+    public void Put(int id, [FromBody] Shop shop)
     {
-      restaurant.RestaurantId = id;
+      shop.ShopId = id;
 
-      _db.Entry(restaurant).State = EntityState.Modified;
+      _db.Entry(shop).State = EntityState.Modified;
 
       _db.SaveChanges();
     }
@@ -86,9 +86,9 @@ namespace LocalBusiness.Controllers
     [HttpDelete("{id}")]
     public void Delete(int id)
     {
-      var restaurantToDelete = _db.Restaurants.FirstOrDefault(entry => entry.RestaurantId == id);
+      var shopToDelete = _db.Shops.FirstOrDefault(entry => entry.ShopId == id);
 
-      _db.Restaurants.Remove(restaurantToDelete);
+      _db.Shops.Remove(shopToDelete);
 
       _db.SaveChanges();
     }
