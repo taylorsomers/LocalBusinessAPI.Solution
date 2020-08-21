@@ -49,10 +49,6 @@
   9.  Enter the command ```dotnet ef database update``` in the terminal.
   10. Enter the command ```dotnet run``` in the terminal. The program should begin running and be accessible by any other program capable of making API requests.
 
-### Postman Test Instructions
-
-  1.  Make sure you have installed the [Postman](https://www.postman.com/downloads/) app.
-  2.  
 
 ### Database Setup Instructions
 
@@ -89,6 +85,24 @@
     `ShopYelpRating` longtext,
     PRIMARY KEY (`ShopId`)
   ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+## API Routing
+
+  ### HTTP Request
+
+  | Functionality | Request Type | HTTP Route |
+  | ---------- | ---------- | ---------- |
+  | Index | ```GET``` | ```/api/restaurants``` |
+  | Index | ```GET``` | ```/api/shops``` |
+  | Create | ```POST``` | ```/api/restaurants``` |
+  | Create | ```POST``` | ```/api/shops``` |
+  | Read | ```GET``` | ```/api/restaurants/{id}``` |
+  | Read | ```GET``` | ```/api/shops/{id}``` |
+  | Update | ```PUT``` | ```/api/restaurants/{id}``` |
+  | Update | ```PUT``` | ```/api/shops/{id}``` |
+  | Delete | ```DELETE``` | ```api/restaurants/{id}``` |
+  | Delete | ```Delete``` | ```api/shops/{id}``` |
 
 
 ## Specifications / Spec Sheet
