@@ -4,25 +4,22 @@
 
 ## Description
 
-  This program is a demonstration of user authentication with Identity in the context of a bakery application that uses many-to-many MySQL database relationships to allow users to access create, update, and delete functionality for Treats and Flavors only if they are signed in. Each Flavor may be associated with many Treats, and each Treat may be may be associated with many Flavors. Users will be able to view content whether or not they are signed in, but will only be able to create, update, or delete objects in the application *if* they are signed in. The essential features of C# and .NET development using databases are present and easily usable, and the use of authentication with Identity in the context of a many-to-many object-oriented application is demonstrated. The application was build using C#/.NET, CSHTML, and MySQL with Entity Framework according to an MVC standard.
+  This program is an API created to allow access to a database of local businesses and their relevant information. It was built with C#/.NET, using Entity Framework to build and integrate with a MySql database. The program has full Index and CRUD functionality, programs accessing the API being capable of accessing an Index of all businesses in the database as well as of adding a new business to the database, viewing a single business, editing the information of any business in the database, and deleting any business in the database. Additionally, the program integrates pagination capability, allowing programs that access the API to obtain and display paged database information.
 
 
 ## Languages & Technologies Used:
 
   ### Programming Languages, Libraries, & Frameworks
-  * CSHTML
-  * CSS
   * C#
-  * Entity Framework
-  * MVC
+  * Entity Framework Core
   * MySQL
   * .NET Core
-  * Razor
 
   ### Operating Systems & Programs
   * Brave
   * Microsoft PowerShell
   * Microsoft Windows 10
+  * Postman
   * Visual Studio Code
 
 ## Installation
@@ -39,7 +36,7 @@
   10. Enter the command "dotnet build" in the terminal.
   11. Enter the command "dotnet run" in the terminal. The program should begin to run in your browser.
 
-  ### Database Setup Instructions
+### Database Setup Instructions
 
 
 
