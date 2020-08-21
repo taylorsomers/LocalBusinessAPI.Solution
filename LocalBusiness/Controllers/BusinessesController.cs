@@ -72,5 +72,13 @@ namespace LocalBusiness.Controllers
       
       return Ok(pagedData);
     }
+
+    [HttpPut("{id}")]
+    public void Put(int id, [FromBody] Business business)
+    {
+      business.BusinessId = id;
+      _db.Entry(business).State = EntityState.Modified;
+      _db.SaveChanges();
+    }
   }
 }
