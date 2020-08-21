@@ -32,19 +32,14 @@
 
   1.  Make sure you have installed all <a href="#requirements">required software</a>.
   2.  Open your computer's terminal and navigate to the directory in which you would like the program to be stored.
-  2.  Enter the terminal command "git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution".
-  3.  Open the file ```appsettings.json```.
-  4.  In ```appsettings.json```, update the username and password for your local MySql database.
-  3.  Enter the command "dotnet restore" in the terminal.
-  4.  Enter the command "dotnet build" in the terminal.
-  11. Enter the command "dotnet ef database update" in the terminal.
-  12. Enter the command "dotnet run" in the terminal. The program should begin running and be accessible by any other program capable of making API requests.
-
-### Installing .NET Core
-
-  1.  Download a web browser, such as [Brave](https://brave.com/download/).
-  2.  In your browser, navigate to https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer for Mac or https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer for Windows and click the link "click here to download manually" if the download for .NET Core 2.2 SDK does not start automatically.
-  3.  Double-click the downloaded .NET Core 2.2 SDK file and run the installer.
+  3.  Enter the command ```git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution``` in the terminal.
+  4.  Open the file ```LocalBusinessAPI.Solution/LocalBusiness/appsettings.json```.
+  5.  In ```appsettings.json```, update the ```username``` and ```password``` values with your local MySql username and password.
+  6.  Using the terminal, navigate to the ```LocalBusinessAPI.Solution/LocalBusiness``` directory.
+  7.  Enter the command ```dotnet restore``` in the terminal.
+  8.  Enter the command ```dotnet build``` in the terminal.
+  9.  Enter the command ```dotnet ef database update``` in the terminal.
+  10. Enter the command ```dotnet run``` in the terminal. The program should begin running and be accessible by any other program capable of making API requests.
 
 ### Postman Test Instructions
 
