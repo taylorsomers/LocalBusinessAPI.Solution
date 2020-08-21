@@ -3,6 +3,9 @@
   ### By [Taylor Somers](https://github.com/taylorsomers/)
 
 
+<img align="center" src="./assets/img/header-image.jpg">
+
+
 ## Description
 
   This program is an API created to allow access to a database of local businesses and their relevant information. It was built with C#/.NET, using Entity Framework to build and integrate with a MySql database. The program has full Index and CRUD functionality, programs accessing the API being capable of accessing an Index of all businesses in the database as well as of adding a new business to the database, viewing a single business, editing the information of any business in the database, and deleting any business in the database. Additionally, the program integrates pagination capability, allowing programs that access the API to obtain and display paged database information.
