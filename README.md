@@ -10,23 +10,25 @@
 ## Languages & Technologies Used:
 
   ### Programming Languages, Libraries, & Frameworks
-  * C#
-  * Entity Framework Core
-  * MySQL
-  * .NET Core
+  * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+  * [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
+  * [MySQL](https://www.mysql.com/)
+  * [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
   ### Operating Systems & Programs
-  * Brave
-  * Microsoft PowerShell
-  * Microsoft Windows 10
-  * Postman
-  * Visual Studio Code
+  * [Brave](https://brave.com/)
+  * [Microsoft PowerShell](https://docs.microsoft.com/en-us/powershell/)
+  * [Microsoft Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10)
+  * [MySql Workbench](https://www.mysql.com/products/workbench/)
+  * [Postman](https://www.postman.com/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Requirements
   * [Git v2.62.2 or Later](https://git-scm.com/downloads/)
   * [MySql Workbench](https://www.mysql.com/products/workbench/)
+  * [Postman v7.30.1 or Later](https://www.postman.com/downloads/)
   * [Visual Studio Code](https://code.visualstudio.com/)
-  * [.NET version 3.1 SDK v2.2 or Later](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+  * [.NET Core v2.2 or Later](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
 ## Installation
 
@@ -43,7 +45,8 @@
 
 ### Postman Test Instructions
 
-  * 
+  1.  Make sure you have installed the [Postman](https://www.postman.com/downloads/) app.
+  2.  
 
 ### Database Setup Instructions
 
