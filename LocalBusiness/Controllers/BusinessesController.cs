@@ -46,5 +46,12 @@ namespace LocalBusiness.Controllers
 
       return query.ToList();
     }
+
+    [HttpPost]
+    public void Post([FromBody] Business business)
+    {
+      _db.Businesses.Add(business);
+      _db.SaveChanges();
+    }
   }
 }
