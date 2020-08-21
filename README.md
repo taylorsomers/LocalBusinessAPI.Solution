@@ -5,9 +5,12 @@
 
 <img align="center" src="./assets/img/header-image.jpg">
 
-<p>
+<p align="center">
   <a href="#description">Description</a> •
-  <a href="#languages_&_technologies used:">Languages & Technologies</a> •
+  <a href="#requirements">Requirements</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#contributors">Contributors</a> •
+  <a href="#license">License</a>
 </p>
 
 
