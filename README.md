@@ -22,13 +22,17 @@
   * Postman
   * Visual Studio Code
 
+## Requirements
+  * [Git v2.62.2 or Later](https://git-scm.com/downloads/)
+  * [MySql Workbench](https://www.mysql.com/products/workbench/)
+  * [Visual Studio Code](https://code.visualstudio.com/)
+  * [.NET version 3.1 SDK v2.2 or Later](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+
 ## Installation
 
   1.  Open your computer's terminal and navigate to the directory in which you would like the program to be stored.
   2.  Enter the command "git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution".
   2.  Navigate to https://github.com/taylorsomers/LocalBusinessAPI.Solution.
-  6.  In your browser, navigate to https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer for Mac or https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer for Windows and click the link "click here to download manually" if the download for .NET Core 2.2 SDK does not start automatically.
-  7.  Double-click the downloaded .NET Core 2.2 SDK file and run the installer.
   8.  Open your computer's terminal and navigate to the "LocalBusiness" subdirectory within the "LocalBusiness.Solution" directory.
   9.  Enter the command "dotnet restore" in the terminal.
   10. Enter the command "dotnet build" in the terminal.
@@ -37,7 +41,9 @@
 
 ### Installing .NET Core
 
-  1.  Download a web browser, such as Apple Safari, Brave, Google Chrome, Microsoft Edge, Mozilla Firefox, or Yandex.
+  1.  Download a web browser, such as [Brave](https://brave.com/download/).
+  2.  In your browser, navigate to https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer for Mac or https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer for Windows and click the link "click here to download manually" if the download for .NET Core 2.2 SDK does not start automatically.
+  3.  Double-click the downloaded .NET Core 2.2 SDK file and run the installer.
 
 ### Postman Test Instructions
 
