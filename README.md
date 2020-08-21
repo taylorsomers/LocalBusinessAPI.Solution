@@ -30,9 +30,11 @@
 
 ## Installation
 
-  1.  Open your computer's terminal and navigate to the directory in which you would like the program to be stored.
+  1.  Make sure you have installed all [required software](href="#requirements").
+  2.  Open your computer's terminal and navigate to the directory in which you would like the program to be stored.
   2.  Enter the terminal command "git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution".
   3.  Open the file ```appsettings.json```.
+  4.  In ```appsettings.json```, update the username and password for your local MySql database.
   3.  Enter the command "dotnet restore" in the terminal.
   4.  Enter the command "dotnet build" in the terminal.
   11. Enter the command "dotnet ef database update" in the terminal.
