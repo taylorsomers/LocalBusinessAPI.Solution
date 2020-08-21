@@ -30,7 +30,7 @@
 
 ## Installation
 
-  1.  Make sure you have installed all [required software](href="#requirements").
+  1.  Make sure you have installed all <a href="#requirements">required software</a>.
   2.  Open your computer's terminal and navigate to the directory in which you would like the program to be stored.
   2.  Enter the terminal command "git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution".
   3.  Open the file ```appsettings.json```.
