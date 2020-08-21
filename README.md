@@ -125,6 +125,11 @@
   | ------------ | ------------ |
   | ```localhost:5000/api/restaurants/?restauranttype=barbecue``` | ```{"restaurantId": 6, "restaurantName": "Tom & Flip's BBQ", "restaurantAddress": "8465 Adams Dr, Greer, SC 29650", "restaurantType": "Barbecue", "restaurantYelpRating": "4 Stars"}, {"restaurantId": 7, "restaurantName": "City of Pigs", "restaurantAddress": "8465 Adams Dr, Greer, SC 29650", "restaurantType": "Barbecue", "restaurantYelpRating": "3 Stars"}``` |
 
+## Note on API Pagination
+
+  * The Local Business API returns a default count of 3 restaurants per page and 5 shops per page.
+  * To modify the default result count per page, use ```limit``` and ```start``` query parameters to change the number of results displayed per page.
+
 
 ## Known Bugs
 
