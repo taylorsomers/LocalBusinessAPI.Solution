@@ -6,7 +6,7 @@
 <img align="center" src="./assets/img/header-image.jpg">
 
 <p align="center">
-  <a href="#description">Description</a> •
+  <a href="#description">**Description**</a> •
   <a href="#requirements">Requirements</a> •
   <a href="#installation">Installation</a> •
   <a href="#contributors">Contributors</a> •
