@@ -31,11 +31,10 @@
 ## Installation
 
   1.  Open your computer's terminal and navigate to the directory in which you would like the program to be stored.
-  2.  Enter the command "git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution".
-  2.  Navigate to https://github.com/taylorsomers/LocalBusinessAPI.Solution.
-  8.  Open your computer's terminal and navigate to the "LocalBusiness" subdirectory within the "LocalBusiness.Solution" directory.
-  9.  Enter the command "dotnet restore" in the terminal.
-  10. Enter the command "dotnet build" in the terminal.
+  2.  Enter the terminal command "git clone https://github.com/taylorsomers/LocalBusinessAPI.Solution".
+  3.  Open the file ```appsettings.json```.
+  3.  Enter the command "dotnet restore" in the terminal.
+  4.  Enter the command "dotnet build" in the terminal.
   11. Enter the command "dotnet ef database update" in the terminal.
   12. Enter the command "dotnet run" in the terminal. The program should begin running and be accessible by any other program capable of making API requests.
 
