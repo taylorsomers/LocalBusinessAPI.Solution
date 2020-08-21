@@ -32,19 +32,36 @@ CREATE TABLE `__efmigrationshistory` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `businesses`
+-- Table structure for table `restaurants`
 --
 
-DROP TABLE IF EXISTS `businesses`;
+DROP TABLE IF EXISTS `restaurants`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `businesses` (
-  `BusinessId` int NOT NULL AUTO_INCREMENT,
-  `BusinessName` longtext,
-  `BusinessAddress` longtext,
-  `BusinessType` longtext,
-  `BusinessYelpRating` longtext,
-  PRIMARY KEY (`BusinessId`)
+CREATE TABLE `restaurants` (
+  `RestaurantId` int NOT NULL AUTO_INCREMENT,
+  `RestaurantName` longtext,
+  `RestaurantAddress` longtext,
+  `RestaurantType` longtext,
+  `RestaurantYelpRating` longtext,
+  PRIMARY KEY (`RestaurantId`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `shops`
+--
+
+DROP TABLE IF EXISTS `shops`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `shops` (
+  `ShopId` int NOT NULL AUTO_INCREMENT,
+  `ShopName` longtext,
+  `ShopAddress` longtext,
+  `ShopType` longtext,
+  `ShopYelpRating` longtext,
+  PRIMARY KEY (`ShopId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +74,4 @@ CREATE TABLE `businesses` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-21 14:40:38
+-- Dump completed on 2020-08-21 18:01:14
