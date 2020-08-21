@@ -87,7 +87,7 @@
   ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
-## API Routing
+## API Routing & Testing
 
   ### HTTP Request
 
@@ -102,7 +102,20 @@
   | Update | ```PUT``` | ```/api/restaurants/{id}``` |
   | Update | ```PUT``` | ```/api/shops/{id}``` |
   | Delete | ```DELETE``` | ```api/restaurants/{id}``` |
-  | Delete | ```Delete``` | ```api/shops/{id}``` |
+  | Delete | ```DELETE``` | ```api/shops/{id}``` |
+
+  ### Path Parameters
+
+  | Parameter | Type | Default | Required | Description |
+  | ---- | ---- | ---- | ---- | ---- |
+  | ```restaurantname``` | string | none | false | Returns restaurants by queried name. |
+  | ```restaurantaddress``` | string | none | false | Returns restaurants by queried address. |
+  | ```restauranttype``` | string | none | false | Returns restaurants by queried type. |
+  | ```restaurantyelprating``` | string | none | false | Returns restaurants by queried Yelp rating. |
+  | ```shopname``` | string | none | false | Returns shops by queried name. |
+  | ```shopaddress``` | string | none | false | Returns shops by queried address. |
+  | ```shoptype``` | string | none | false | Returns shops by queried type. |
+  | ```shopyelprating``` | string | none | false | Returns shops by queried Yelp rating. |
 
 
 ## Specifications / Spec Sheet
