@@ -135,7 +135,7 @@
 
 | Location : Message |  Situation  | Resolved (Y/N) |  Bug Resolution Strategy |
 | ----------- | ----------- | ----------- | ----------- |
-| Terminal : "Unable to create an object of type 'LocalBusinessContext'." | Error thrown when attempting Initial migration. | Y | Add DesignTimeDbContextFactory.cs file to LocalBusiness/Models directory. |
+| Terminal : ```Unable to create an object of type 'LocalBusinessContext'.``` | Error thrown when attempting Initial migration. | Y | Add DesignTimeDbContextFactory.cs file to LocalBusiness/Models directory. |
 
 
 ## Support & Contact Details
