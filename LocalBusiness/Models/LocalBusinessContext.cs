@@ -10,7 +10,7 @@ namespace LocalBusiness.Models
     }
 
     public DbSet<Business> Businesses { get; set; }
-  
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
       builder.Entity<Business>()
