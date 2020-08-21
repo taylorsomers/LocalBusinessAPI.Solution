@@ -104,6 +104,7 @@
   | Delete | ```DELETE``` | ```api/restaurants/{id}``` |
   | Delete | ```DELETE``` | ```api/shops/{id}``` |
 
+
   ### Path Parameters
 
   | Parameter | Type | Default | Required | Description |
@@ -118,11 +119,11 @@
   | ```shopyelprating``` | string | none | false | Returns shops by queried Yelp rating. |
 
 
-## Specifications / Spec Sheet
+  ### Sample Query & JSON Response
 
-  | Program Behavior | Example Behavior | Example Output | Met? (Y/N) |
-  | ----------- | ----------- | ----------- | ----------- |
-  
+  | Sample Query | Sample JSON Response |
+  | ------------ | ------------ |
+  | ```localhost:5000/api/restaurants/?restauranttype=barbecue``` | ```{"restaurantId": 6, "restaurantName": "Tom & Flip's BBQ", "restaurantAddress": "8465 Adams Dr, Greer, SC 29650", "restaurantType": "Barbecue", "restaurantYelpRating": "4 Stars"}, {"restaurantId": 7, "restaurantName": "City of Pigs", "restaurantAddress": "8465 Adams Dr, Greer, SC 29650", "restaurantType": "Barbecue", "restaurantYelpRating": "3 Stars"}``` |
 
 
 ## Known Bugs
