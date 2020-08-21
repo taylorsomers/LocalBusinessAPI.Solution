@@ -114,4 +114,4 @@
 
 ### License
 
-  * This program is free to use under the GNU General Public License GPLv3. <span><img height="12em" src="./assets/img/AGPLv3Logo.png"></span> © 2020 Taylor Somers. All rights reserved.
+  * This program is free to use under the [GNU Affero General Public License AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html). <span><img height="12em" src="./assets/img/AGPLv3Logo.png"></span> © 2020 Taylor Somers. All rights reserved.
