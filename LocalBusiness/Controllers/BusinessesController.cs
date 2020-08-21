@@ -77,7 +77,19 @@ namespace LocalBusiness.Controllers
     public void Put(int id, [FromBody] Business business)
     {
       business.BusinessId = id;
+
       _db.Entry(business).State = EntityState.Modified;
+
+      _db.SaveChanges();
+    }
+
+    [HttpDelete("{id}")]
+    public void Delete(int id)
+    {
+      var businessToDelete = _db.Businesses.FirstOrDefault(entry => entry.BusinessId == id);
+
+      _db.Businesses.Remove(businessToDelete);
+
       _db.SaveChanges();
     }
   }
