@@ -154,6 +154,7 @@
 ### Contributors
 
   * [Taylor Somers](https://github.com/taylorsomers/)
+  * README Photo Credit: [Olivia Hutcherson](http://www.oliviahutcherson.com/)
 
 
 ### License
