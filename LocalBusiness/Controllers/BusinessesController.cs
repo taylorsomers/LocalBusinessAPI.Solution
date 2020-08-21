@@ -59,5 +59,18 @@ namespace LocalBusiness.Controllers
     {
       return _db.Businesses.FirstOrDefault(entry => entry.BusinessId == id);
     }
+
+    [HttpGet("page")]
+    public ActionResult GetPage([FromQuery] UrlQuery urlQuery)
+    {
+      var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
+
+      var pagedData = _db.Businesses
+        .OrderBy(business => business.BusinessId)
+        .Skip((validUrlQuery.PageNumber - 1) * validUrlQuery.PageSize)
+        .Take(validUrlQuery.PageSize);
+      
+      return Ok(pagedData);
+    }
   }
 }
