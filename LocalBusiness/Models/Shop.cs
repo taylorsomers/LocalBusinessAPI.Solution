@@ -1,22 +1,15 @@
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-
 namespace LocalBusiness.Models
 {
-  public class Business
+  public class Shop
   {
-    public int BusinessId { get; set; }
+    public int ShopId { get; set; }
 
-    public string BusinessName { get; set; }
+    public string ShopName { get; set; }
 
-    public string BusinessAddress { get; set; }
+    public string ShopAddress { get; set; }
 
-    public string BusinessType { get; set; }
+    public string ShopType { get; set; }
 
-    public string BusinessYelpRating { get; set; }
+    public string ShopYelpRating { get; set; }
   }
 }
