@@ -62,19 +62,30 @@
     PRIMARY KEY (`MigrationId`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-  DROP TABLE IF EXISTS `businesses`;
+  DROP TABLE IF EXISTS `restaurants`;
 
-  CREATE TABLE `businesses` (
-    `BusinessId` int NOT NULL AUTO_INCREMENT,
-    `BusinessName` longtext,
-    `BusinessAddress` longtext,
-    `BusinessType` longtext,
-    `BusinessYelpRating` longtext,
-    PRIMARY KEY (`BusinessId`)
+  CREATE TABLE `restaurants` (
+    `RestaurantId` int NOT NULL AUTO_INCREMENT,
+    `RestaurantName` longtext,
+    `RestaurantAddress` longtext,
+    `RestaurantType` longtext,
+    `RestaurantYelpRating` longtext,
+    PRIMARY KEY (`RestaurantId`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+  DROP TABLE IF EXISTS `shops`;
+
+  CREATE TABLE `shops` (
+    `ShopId` int NOT NULL AUTO_INCREMENT,
+    `ShopName` longtext,
+    `ShopAddress` longtext,
+    `ShopType` longtext,
+    `ShopYelpRating` longtext,
+    PRIMARY KEY (`ShopId`)
   ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
-## Specifications
+## Specifications / Spec Sheet
 
   | Program Behavior | Example Behavior | Example Output | Met? (Y/N) |
   | ----------- | ----------- | ----------- | ----------- |
