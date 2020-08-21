@@ -38,6 +38,28 @@
 
 ### Database Setup Instructions
 
+  CREATE DATABASE  IF NOT EXISTS `taylor_somers`;
+
+  USE `taylor_somers`;
+
+  DROP TABLE IF EXISTS `__efmigrationshistory`;
+
+  CREATE TABLE `__efmigrationshistory` (
+    `MigrationId` varchar(95) NOT NULL,
+    `ProductVersion` varchar(32) NOT NULL,
+    PRIMARY KEY (`MigrationId`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+  DROP TABLE IF EXISTS `businesses`;
+
+  CREATE TABLE `businesses` (
+    `BusinessId` int NOT NULL AUTO_INCREMENT,
+    `BusinessName` longtext,
+    `BusinessAddress` longtext,
+    `BusinessType` longtext,
+    `BusinessYelpRating` longtext,
+    PRIMARY KEY (`BusinessId`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
 ## Specifications
